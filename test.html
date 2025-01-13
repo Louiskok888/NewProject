@@ -1,0 +1,162 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Test</title>
+</head>
+<body>
+    <h1>Testing JavaScript Alert</h1>
+    <button onclick="showAlert()">Click me for alert</button>
+
+    <script>
+        function showAlert() {
+            alert("Hello, this is an alert!");
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Example</title>
+</head>
+<body>
+
+    <h1>Test Confirm Function</h1>
+    <button onclick="askConfirmation()">Click me to confirm</button>
+
+    <script>
+        function askConfirmation() {
+            let isConfirmed = confirm("Are you sure you want to continue?");
+            
+            if (isConfirmed) {
+                alert("You clicked OK!");
+            } else {
+                alert("You clicked Cancel!");
+            }
+        }
+    </script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Confirm Example</title>
+</head>
+<body>
+
+    <h1>Submit Form Confirmation</h1>
+    <form id="myForm">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            let isConfirmed = confirm("Are you sure you want to submit the form?");
+            
+            if (!isConfirmed) {
+                event.preventDefault();  // Prevent form submission if Cancel is clicked
+                alert("Form submission canceled.");
+            } else {
+                alert("Form submitted!");
+            }
+        });
+    </script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document.write Example</title>
+</head>
+<body>
+
+    <script>
+        document.write("Hello, world!");
+    </script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document.write HTML Example</title>
+</head>
+<body>
+    <p>Hello</p>
+    <h2>Here I am</h2>
+    <script>
+        document.write("<h1>Welcome to my website!</h1>");
+        document.write("<p>This content was added dynamically using document.write().</p>");
+        
+    </script>
+
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prompt() Example</title>
+</head>
+<body>
+
+    <script>
+        let userName = prompt("What is your name?");
+        document.write("Hello, " + userName + "!");
+        console.log("Hello, " + userName + "!");
+
+    </script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onplay Event Example</title>
+</head>
+<body>
+
+    <h1>Video OnPlay Example</h1>
+    <video width="320" height="240" controls onplay="playStarted()">
+        <source src="sample.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <script>
+        function playStarted() {
+            alert("The video has started playing!");
+        }
+    </script>
+
+</body>
+</html>

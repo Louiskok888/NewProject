@@ -1,0 +1,3 @@
+// "return" in function is to return an result, if side effect or updating, "return" is not required.
+// Let word = "hello", if want to change the word, just type word = (type any), do not declare let again to avoid error.
+// 

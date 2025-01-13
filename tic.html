@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        #game {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-gap: 10px;
+            padding: 0;
+            list-style: none;
+            margin: 20px 0;
+        }
+        li {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            background-color: #fff;
+            transition: background-color 0.3s ease;
+        }
+        li.x {
+            color: #ff6347; /* Tomato */
+        }
+        li.o {
+            color: #4682b4; /* Steel Blue */
+        }
+        li:hover {
+            background-color: #f0f0f0;
+        }
+        li.winning {
+            background-color: #90ee90; /* LightGreen */
+            color: white;
+        }
+        #turn-display {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        #reset-game {
+            margin-top: 20px;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #008cba;
+            color: white;
+            border-radius: 5px;
+        }
+        #reset-game:hover {
+            background-color: #007b9f;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="game">
+        <h1>Tic-Tac-Toe</h1>
+        <ul>
+            <li data-pos="0,0" aria-label="Cell 1" role="button"></li>
+            <li data-pos="0,1" aria-label="Cell 2" role="button"></li>
+            <li data-pos="0,2" aria-label="Cell 3" role="button"></li>
+            <li data-pos="1,0" aria-label="Cell 4" role="button"></li>
+            <li data-pos="1,1" aria-label="Cell 5" role="button"></li>
+            <li data-pos="1,2" aria-label="Cell 6" role="button"></li>
+            <li data-pos="2,0" aria-label="Cell 7" role="button"></li>
+            <li data-pos="2,1" aria-label="Cell 8" role="button"></li>
+            <li data-pos="2,2" aria-label="Cell 9" role="button"></li>
+        </ul>
+        <div id="turn-display">Player X's Turn</div>
+        <button id="reset-game">Reset Game</button>
+        <div id="game-messages" class="hidden"></div>
+        <div id="player-one-score">Player X Score: 0</div>
+        <div id="player-two-score">Player O Score: 0</div>
+    </div>
+    <script src="tic.js"></script>
+</body>
+</html>
