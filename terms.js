@@ -99,10 +99,24 @@
 // git pull origin master
 // git push
 // git push origin master
-// git checkout branch name
+// git checkout <branch name>
+// git checkout -b <branch name>
 // git clone https://github.com/yourusername/example-repo.git
+// git remote add origin https://github.com/username/repository-name.git
 // git branch
 // git branch -r
+// git branch -a
 // git status
 
-// testing fetch
+// Create a repository 
+// mkdir my-project
+// cd my-project
+// git init
+// echo "Hello, world!" > README.md
+// git add README.md
+// git commit -m "Initial commit"
+// Create a repository on GitHub.
+// git remote add origin https://github.com/username/repository-name.git
+// git push -u origin master  # or `main` depending on your branch name
+
+
