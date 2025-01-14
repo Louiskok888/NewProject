@@ -351,13 +351,3 @@
 // console.log(myEmployee)
 
 
-// testing 1
-// testing
-
-// adding new features 
-
-// testing 2
-
-// Testing 3
-
-// Testing 4
