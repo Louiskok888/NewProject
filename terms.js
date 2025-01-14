@@ -96,4 +96,11 @@
 // git add .
 // git commit -m "message"
 // git pull
+// git pull origin master
 // git push
+// git push origin master
+// git checkout branch name
+// git clone https://github.com/yourusername/example-repo.git
+// git branch
+// git branch -r
+// git status
